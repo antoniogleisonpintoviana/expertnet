@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pequena Gráfica - Cálculo de Serviços</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🖨️ Expert Net</h1>
+
+    <div class="service-group">
+      <label for="copias">Número de cópias:</label>
+      <input type="number" id="copias" placeholder="Digite a quantidade" min="0">
+      <div class="price-info">Preço: R$ 0,70 cada</div>
+    </div>
+
+    <div class="service-group">
+      <label for="boletos">Número de boletos:</label>
+      <input type="number" id="boletos" placeholder="Digite a quantidade" min="0">
+      <div class="price-info">Preço: R$ 2,00 cada</div>
+    </div>
+
+    <div class="service-group">
+      <label for="impressoes">Número de páginas impressas:</label>
+      <input type="number" id="impressoes" placeholder="Digite a quantidade" min="0">
+      <div class="price-info">Preço: R$ 1,00 cada página</div>
+    </div>
+
+    <div class="service-group">
+      <label for="fotografico">Impressão em papel fotográfico:</label>
+      <input type="number" id="fotografico" placeholder="Digite a quantidade" min="0">
+      <div class="price-info">Preço: R$ 5,00 cada página</div>
+    </div>
+
+    <div class="service-group">
+      <label for="foto3x4">Fotos 3x4 (página com 6 fotos):</label>
+      <input type="number" id="foto3x4" placeholder="Digite a quantidade de páginas" min="0">
+      <div class="price-info">Preço: R$ 5,00 cada página (6 fotos)</div>
+    </div>
+
+    <button id="btnCalcular">Calcular Total</button>
+
+    <div id="resultado" style="display: none;">
+      <div class="result-item">
+        <span class="service-name">Cópias:</span>
+        <span class="service-value" id="valorCopias">R$ 0,00</span>
+      </div>
+      <div class="result-item">
+        <span class="service-name">Boletos:</span>
+        <span class="service-value" id="valorBoletos">R$ 0,00</span>
+      </div>
+      <div class="result-item">
+        <span class="service-name">Impressões:</span>
+        <span class="service-value" id="valorImpressoes">R$ 0,00</span>
+      </div>
+      <div class="result-item">
+        <span class="service-name">Papel Fotográfico:</span>
+        <span class="service-value" id="valorFotografico">R$ 0,00</span>
+      </div>
+      <div class="result-item">
+        <span class="service-name">Fotos 3x4:</span>
+        <span class="service-value" id="valorFoto3x4">R$ 0,00</span>
+      </div>
+      <div class="total">
+        <span>Total:</span>
+        <span id="valorTotal">R$ 0,00</span>
+      </div>
+    </div>
+
+    <div id="erro" class="erro" style="display: none;"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
